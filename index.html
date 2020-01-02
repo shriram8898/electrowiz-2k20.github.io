@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>ElectroWiz-2k20</title>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="design.css">
+</head>
+<body>
+	<nav class="navbar navbar-expand-xl navbar-light bg-dark fixed-top">
+		<div class="navbar-header">
+			<a href="#Electrofest-2k20" class="navbar-brand text-light bg-dark">Elecrowiz-2k20</a>
+		</div>
+		<div class="nav navbar-nav mx-2">
+			<li id="stark">
+				<a href="#events" class="text-light bg-dark mx-2">EVENTS</a>
+				<a href="#contact" class="text-light bg-dark mx-2">CONTACT</a>
+				<a href="#" class="text-light bg-dark mx-2">REGISTER</a>
+			</li>
+		</div>
+	</nav>
+	 <div class="Home" id="Electrofest-2k20">
+	 	
+        <h2>ElectroWiz-2k20</h2>
+        <p></p>
+        <img src="1.jpeg" style="width:500px;height:600px;">
+        <p></p>
+        <div id="clockdiv"> 
+  		<div> 
+    		<span class="days" id="day"></span> 
+    		<div class="smalltext">Days</div> 
+ 		</div> 
+  		<div> 
+    		<span class="hours" id="hour"></span> 
+   			<div class="smalltext">Hours</div> 
+  		</div> 
+  		<div> 
+   			<span class="minutes" id="minute"></span> 
+    		<div class="smalltext">Minutes</div> 
+  		</div> 
+  		<div> 
+    		<span class="seconds" id="second"></span> 
+    		<div class="smalltext">Seconds</div> 
+  		</div> 
+		</div> 
+		<p id="demo"></p> 
+		<script> 
+			var deadline = new Date("jan 25, 2020 00:00:00").getTime();   
+			var x = setInterval(function() { 
+			var now = new Date().getTime(); 
+			var t = deadline - now; 
+			var days = Math.floor(t / (1000 * 60 * 60 * 24)); 
+			var hours = Math.floor((t%(1000 * 60 * 60 * 24))/(1000 * 60 * 60)); 
+			var minutes = Math.floor((t % (1000 * 60 * 60)) / (1000 * 60)); 
+			var seconds = Math.floor((t % (1000 * 60)) / 1000); 
+			document.getElementById("day").innerHTML =days ; 
+			document.getElementById("hour").innerHTML =hours; 
+			document.getElementById("minute").innerHTML = minutes;  
+			document.getElementById("second").innerHTML =seconds;  
+			if (t < 0) { 
+        		clearInterval(x); 
+        		document.getElementById("demo").innerHTML = "TIME UP"; 
+        		document.getElementById("day").innerHTML ='0'; 
+        		document.getElementById("hour").innerHTML ='0'; 
+        		document.getElementById("minute").innerHTML ='0' ;  
+       			document.getElementById("second").innerHTML = '0'; } 
+			}, 1000); 
+		</script> 
+	 </div>
+	 <div class="Event" id="events">
+	 	<h2>EVENTS</h2>
+	 	<p></p>
+	 	<div class="row">
+  		<div class="col-sm-4">
+	 	<div class="card-text-center" style="width: 18rem;">
+ 		<div class="card-body">
+    		<img src="Events/Images/1.jpg" alt="I'm Groot" class="img-fluid">
+    		<a href="Events/Event-1.html" class="btn btn-primary">I'm Groot...</a>
+  		</div>
+		</div>
+	    </div>
+	    <div class="col-sm-4">
+	 	<div class="card-text-center" style="width: 18rem;">
+ 		<div class="card-body">
+    		<img src="Events/Images/2.jpg" alt="I'm IronMan" class="img-fluid">
+    		<a href="Events/Event-2.html" class="btn btn-primary">I'm IRONMAN</a>
+  		</div>
+		</div>
+		</div>
+	 	<div class="col-sm-4">
+	 	<div class="card-text-center" style="width: 18rem;">
+ 		<div class="card-body">
+    		<img src="Events/Images/3.jpg" alt="Captin America" class="img-fluid">
+    		<a href="Events/Event-3.html" class="btn btn-primary">Captin America</a>
+  		</div>
+		</div>
+		</div>
+		</div>
+		<p></p>
+	 	<div class="row">
+  		<div class="col-sm-4">
+	 	<div class="card-text-center" style="width: 18rem;">
+ 		<div class="card-body">
+    		<img src="Events/Images/4.jpg" alt="Hulk Smash" class="img-fluid">
+    		<a href="Events/Event-4.html" class="btn btn-primary">Hulk Smash</a>
+  		</div>
+		</div>
+	    </div>
+	    <div class="col-sm-4">
+	 	<div class="card-text-center" style="width: 18rem;">
+ 		<div class="card-body">
+    		<img src="Events/Images/5.jpg" alt="Wakanda-Thor" class="img-fluid">
+    		<a href="Events/Event-5.html" class="btn btn-primary">Wakanda-Thor</a>
+		</div>
+		</div>
+		</div>
+	 	<div class="col-sm-4">
+	 	<div class="card-text-center" style="width: 18rem;">
+ 		<div class="card-body">
+    		<img src="Events/Images/6.jpg" alt="Thanos Hunt" class="img-fluid">
+    		<a href="Events/Event-6.html" class="btn btn-primary">Thanos Hunt</a>
+  		</div>
+		</div>
+		</div>
+		</div>
+		<p></p>
+	 	<div class="row">
+  		<div class="col-sm-4">
+	 	<div class="card-text-center" style="width: 18rem;">
+ 		<div class="card-body">
+    		<img src="Events/Images/7.jpg" alt="Dr. Stranger’s Way" class="img-fluid">
+    		<a href="Events/Event-7.html" class="btn btn-primary">Dr. Stranger’s Way</a>
+  		</div>
+		</div>
+	    </div>
+	    <div class="col-sm-4">
+	 	<div class="card-text-center" style="width: 18rem;">
+ 		<div class="card-body">
+    		<img src="Events/Images/8.jpg" alt="Guardians of Galaxy" class="img-fluid">
+    		<a href="Events/Event-8.html" class="btn btn-primary">Guardians of Galaxy</a>
+  		</div>
+		</div>
+		</div>
+	 	<div class="col-sm-4">
+	 	<div class="card-text-center" style="width: 18rem;">
+ 		<div class="card-body">
+    		<img src="Events/Images/9.jpg" alt="Avengers Assemble" class="img-fluid">
+    		<a href="Events/Event-9.html" class="btn btn-primary">Avengers Assemble</a>
+  		</div>
+		</div>
+		</div>
+		</div>
+	 	
+	 </div>
+	 <div class="Contact" id="contact">
+	 	
+	 	<h1>SYMPOSIUM VENUE</h1>
+	 	<div class="col-lg-12 venue-map">
+           <div style="width: 100%"><iframe width="100%" height="500" src="https://maps.google.com/maps?width=100%&amp;height=600&amp;hl=en&amp;q=Velammal%20Engineering%20College%20%20%20Velammal%20Nagar%2C%20Ambattur-Red%20Hills%20Road%2C%20Chennai%20-%20600%20066.+()&amp;ie=UTF8&amp;t=&amp;z=14&amp;iwloc=B&amp;output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"><a href="https://www.maps.ie/coordinates.html">latitude longitude finder</a></iframe></div><br>
+          </div>
+        <div class="section-header">
+          <h2>Contact Us</h2>
+          <p>
+          	
+          </p>
+        </div>
+
+        <div id="sym" class="row contact-info">
+
+          <div class="col-md-4">
+            <div class="contact-address">
+              <i class="ion-ios-location-outline"></i>
+              <h3>Address</h3>
+              <p>
+              	
+              </p>
+              <address>Velammal Engineering College 
+					   Velammal Nagar, Ambattur-Red Hills Road,
+					   Chennai - 600 066.</address>
+            </div>
+          </div>
+
+          <div class="col-md-4">
+            <div class="contact-phone">
+              <i class="ion-ios-telephone-outline"></i>
+              <h3>Contact Details:</h3>
+              <p>
+              	
+              </p>
+              <h4>Co ordinator contact number:</h4>
+              <p> Vijayan.E     Ph:<a href="tel:+918220360770">+918220360770</a>
+              </p><p> SREE THOSINI.J     Ph:<a href="tel:+917299027037">+917299027037</a>
+              </p><p> Aditya.S     Ph:<a href="tel:+919940231637">+919940231637</a>
+     
+              </p>
+            </div>
+          </div>
+
+          <div class="col-md-4">
+            <div class="contact-email">
+              <i class="ion-ios-email-outline"></i>
+              <h3>Email</h3>
+              <p><a href="electrowiz2k20@gmail.com">electrowiz2k20@gmail.com</a></p>
+              
+              <h3>Instagram:</h3>
+              <p><a href="https://www.instagram.com/electrowiz_2k20?r=nametag">
+				https://www.instagram.com/electrowiz_2k20?r=nametag</a></p>            
+            </div>
+          </div>
+
+        </div>
+</body>
+</html>
